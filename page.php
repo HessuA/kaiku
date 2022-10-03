@@ -13,7 +13,7 @@ the_post();
 
 get_header(); ?>
 
-<main>
+<main class="site-main">
     <?php
     the_content();
     ?>
