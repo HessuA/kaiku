@@ -1,0 +1,19 @@
+{
+  "name": "kaiku",
+  "version": "1.0.0",
+  "description": "This is WordPress starter theme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:HessuA/kaiku.git"
+  },
+  "author": "Heikki Anttonen",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.13",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.17",
+    "sass": "^1.55.0"
+  }
+}
