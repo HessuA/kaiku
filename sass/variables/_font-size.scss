@@ -18,7 +18,7 @@
   --font-size-22: 22px;
 
   // Elements
-  --font-size-paragraph: var(var(--font-size-16));
+  --font-size-paragraph: var(--font-size-16);
 
   // Line heights
   --line-height-heading: 1.5;
@@ -30,5 +30,5 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-paragraph: var(--font-weight-regular);
-  --font-weight-headings: var(var(--font-weight-bold));
+  --font-weight-headings: var(--font-weight-bold);
 }
