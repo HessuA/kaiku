@@ -12,6 +12,7 @@ namespace Kaiku;
  * Required files
  */
 require get_theme_file_path( '/inc/includes.php' );
+require get_theme_file_path( 'inc/hooks.php' );
 
 // Run theme supports
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_support' );

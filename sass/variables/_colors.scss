@@ -1,6 +1,13 @@
-body {
-  background-color: red;
-}
-h1 {
-  font-size: 3rem;
+:root {
+  // Brand colors
+  --color-black: #121212;
+  --color-white: #fff;
+  --main-brand-color: #ff8600;
+  --secondary-brand-color: #102542;
+  --color-light-grey: #d7d6d6;
+
+  // Main elements
+  --color-heading: var(--main-main);
+  --color-main: var(var(--main-brand-color));
+  --color-paragraph: var(var(--color-light-grey));
 }

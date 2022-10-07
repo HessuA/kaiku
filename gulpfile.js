@@ -3,20 +3,30 @@ const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass")(require("sass"));
 const cssnano = require("cssnano");
+const autoprefixer = require("autoprefixer");
+const sourcemaps = require("gulp-sourcemaps");
+
+const paths = {
+  styles: {
+    src: "sass/**/*.scss",
+    dest: "assets/build/css",
+  },
+};
 
 function style() {
-  let plugins = [cssnano()];
-
   return gulp
-    .src("./sass/*scss")
+    .src(paths.styles.src)
+    .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(postcss(plugins))
-    .pipe(gulp.dest("./assets/build/css"));
+    .on("error", sass.logError)
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.styles.dest));
 }
 
 function watch() {
-  gulp.watch("./sass/*scss", style);
+  style();
+  gulp.watch("sass/**", style);
 }
 
-exports.style = style;
 exports.watch = watch;
