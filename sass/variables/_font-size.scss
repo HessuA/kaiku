@@ -1,0 +1,34 @@
+:root {
+  //Heading
+  --font-size-hero: 48px;
+  --font-size-h1: 40px;
+  --font-size-h2: 32px;
+  --font-size-h3: 24px;
+  --font-size-h4: 20px;
+  --font-size-h5: 16px;
+  --font-size-h6: 14px;
+
+  // Paragraph
+  --font-size-14: 14px;
+  --font-size-15: 15px;
+  --font-size-16: 16px;
+  --font-size-17: 17px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+
+  // Elements
+  --font-size-paragraph: var(var(--font-size-16));
+
+  // Line heights
+  --line-height-heading: 1.5;
+  --line-height-paragraph: 1.5;
+
+  // Font weights
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-paragraph: var(--font-weight-regular);
+  --font-weight-headings: var(var(--font-weight-bold));
+}
