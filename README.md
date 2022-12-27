@@ -1,2 +1,2 @@
 # kaiku
-This is WordPress starter theme
+This is WordPress starter theme (in progress)
